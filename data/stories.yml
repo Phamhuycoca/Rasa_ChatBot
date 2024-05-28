@@ -2,29 +2,13 @@ version: "3.1"
 
 stories:
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
 
-- story: sad path 1
+- story: người dùng cần cổ vũ
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
+  - intent: user_needs_cheering
   - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
 
-- story: sad path 2
+- story: hỏi người dùng đã được giúp đỡ
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
+  - intent: user_needs_help
   - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye

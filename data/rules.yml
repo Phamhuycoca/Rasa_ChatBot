@@ -2,12 +2,28 @@ version: "3.1"
 
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: Chào hỏi
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Tạm biệt
   steps:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: Tôi là trợ lý ảo AI
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: người dùng cần cổ vũ
+  steps:
+  - intent: user_needs_cheering
+  - action: utter_cheer_up
+  
+
+- rule: hỏi người dùng đã được giúp đỡ
+  steps:
+  - intent: user_needs_help
+  - action: utter_did_that_help

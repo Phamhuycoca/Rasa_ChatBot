@@ -3,31 +3,30 @@ version: "3.1"
 intents:
   - greet
   - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - user_needs_cheering
+  - user_needs_help
 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "Đừng lo, mọi chuyện sẽ ổn thôi!"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_greet:
+    - text: "Xin chào! Tôi có thể giúp gì cho bạn?"
+    - text: "Chào bạn! Bạn cần Bot giúp gì không?"
+    - text: "Xin chào!\nTôi là Bot, rất hân hạnh được trò chuyện với bạn!"
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Tạm biệt bạn!"
+    - text: "Bye!"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "Tôi là trợ lý ảo AI, bạn vui lòng nhập câu hỏi ?"
+
+  utter_happy:
+    - text: "Tôi rất vui được giúp bạn!"
+
+  utter_did_that_help:
+    - text: "Điều đó có giúp ích cho bạn không?"
 
 session_config:
   session_expiration_time: 60
