@@ -5,6 +5,10 @@ intents:
   - goodbye
   - user_needs_cheering
   - user_needs_help
+  - search_job
+  - job_info
+  - apply_job
+  - job_application_status
 
 responses:
   utter_cheer_up:
@@ -17,10 +21,9 @@ responses:
 
   utter_goodbye:
     - text: "Tạm biệt bạn!"
-    - text: "Bye!"
 
   utter_iamabot:
-    - text: "Tôi là trợ lý ảo AI, bạn vui lòng nhập câu hỏi ?"
+    - text: "Tôi là trợ lý ảo AI, bạn vui lòng nhập câu hỏi?"
 
   utter_happy:
     - text: "Tôi rất vui được giúp bạn!"
@@ -28,6 +31,18 @@ responses:
   utter_did_that_help:
     - text: "Điều đó có giúp ích cho bạn không?"
 
+  utter_job_info:
+    - text: "Vui lòng cho biết thêm thông tin việc bạn cần tìm"
+    - text: "Vị trí công việc tại {{company}} yêu cầu {{skills}}. Mức lương khoảng {{salary}}."
+
+  utter_job_application_status:
+    - text: "Trạng thái đơn xin việc của bạn tại {{company}} hiện đang là {{status}}."
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+entities:
+  - company
+  - skills
+  - salary

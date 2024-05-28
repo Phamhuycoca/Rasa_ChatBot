@@ -12,3 +12,8 @@ stories:
   steps:
   - intent: user_needs_help
   - action: utter_did_that_help
+  
+- story: tìm kiếm thông tin việc làm
+  steps:
+  - intent: search_job
+  - action: utter_job_info

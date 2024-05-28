@@ -41,4 +41,11 @@ nlu:
     - tạm biệt bot nhá
     - Biến
 
+- intent: search_job
+  examples: |
+    - Tìm việc giúp tôi
+    - Tìm việc làm giúp tôi được không ?
+    - Tôi muốn tìm việc làm ở [Google](company)
+    - Cần tìm một công việc yêu cầu kỹ năng [Python](skills)
+    - Tôi đang tìm việc với mức lương khoảng [1000 USD](salary)
 
