@@ -33,10 +33,12 @@ responses:
 
   utter_job_info:
     - text: "Vui lòng cho biết thêm thông tin việc bạn cần tìm"
-    - text: "Vị trí công việc tại {{company}} yêu cầu {{skills}}. Mức lương khoảng {{salary}}."
+    - text: "Vui lòng cho biết kĩ năng và kinh nghiệm bạn đã có ?"
+    - text: "Vị trí công việc tại Đại nam yêu cầu .net và ReactJS. Mức lương khoảng 10tr."
 
   utter_job_application_status:
-    - text: "Trạng thái đơn xin việc của bạn tại {{company}} hiện đang là {{status}}."
+    - text: "Trạng thái đơn xin việc của bạn tại Đại nam hiện đang là không tuyển dụng."
+    - text: "Hiện tại tôi không có thông tin bạn đang tìm."
 
 session_config:
   session_expiration_time: 60
